@@ -35,7 +35,7 @@ export default function Home() {
           </a>
           <a
             aria-label="Email"
-            href="mailto://opensource@anarch.studio"
+            href="mailto:opensource@anarch.studio"
             target="_blank"
           >
             <FiMail />
