@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from "~/public/logo.png";
 import { FiGithub, FiMail } from "react-icons/fi";
+import { FaItchIo } from "react-icons/fa"
 
 export default function Home() {
   return (
@@ -37,6 +38,11 @@ export default function Home() {
             target="_blank"
           >
             <FiGithub />
+          </a>
+          <a aria-label="Go to Astra Surge's itch.io page"
+            href="https://astrasurge.itch.io/"
+            target="_blank">
+            <FaItchIo />
           </a>
           <a
             aria-label="Email"
