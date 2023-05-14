@@ -40,7 +40,7 @@ export default function RootLayout({
     <html lang="en" className={`${manrope.variable} ${urbanist.variable}`}>
       <body>
         {children}
-        <Script id="icarus" data-domain="astrasurge.com" src="https://icarus.astrasurge.com/js/script.js" />
+        <Script id="icarus" data-domain="astrasurge.com" src="https://icarus.astrasurge.com/js/script.js" strategy="afterInteractive" />
       </body>
     </html>
   );
