@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Urbanist, Manrope } from "next/font/google";
 import { Metadata } from "next";
+import Script from "next/script";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -37,7 +38,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${manrope.variable} ${urbanist.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script id="icarus" data-domain="astrasurge.com" src="https://icarus.astrasurge.com/js/script.js" />
+      </body>
     </html>
   );
 }
