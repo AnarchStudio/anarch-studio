@@ -5,12 +5,12 @@ const nextConfig = {
   },
   redirects: async () => [
     {
-      source: '/:path*',
-      has: [{type: "host", value: "astrasurge.com"}],
-      destination: 'https://www.astrasurge.com/:path*',
+      source: "/:path*",
+      has: [{ type: "host", value: "astrasurge.com" }],
+      destination: "https://www.astrasurge.com/:path*",
       permanent: true,
-    }
-  ]
-}
+    },
+  ],
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
