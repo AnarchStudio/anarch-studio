@@ -42,8 +42,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${manrope.variable} ${urbanist.variable}`}>
       <body>
-        <header className=" fixed z-20 w-full bg-black">
-          <div className="container m-auto flex h-24 items-center justify-between p-4 font-attract text-3xl">
+        <header className=" fixed z-20 w-full  bg-black/50">
+          <div className="container m-auto flex h-16 items-center justify-between p-4 font-attract text-3xl backdrop-blur">
             <div className="flex gap-4 text-center">
               <div className="inline-block w-8">
                 <Logo />

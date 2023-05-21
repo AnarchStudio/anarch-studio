@@ -1,11 +1,12 @@
 "use client";
 
 import clsx from "clsx";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { SlArrowDown } from "react-icons/sl";
 
 const NextHeroIcon = () => {
   const [arrowHid, setArrowHid] = useState(false);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,13 +22,23 @@ const NextHeroIcon = () => {
     };
   }, []);
 
+  const handleClick = useCallback(() => {
+    buttonRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+    console.log("clicked");
+  }, []);
+
   return (
-    <SlArrowDown
-      className={clsx(
-        `absolute bottom-4 z-10 m-auto animate-bounce text-4xl `,
-        arrowHid && "opacity-0"
-      )}
-    />
+    <button aria-label="Click to scroll" ref={buttonRef} onClick={handleClick}>
+      <SlArrowDown
+        className={clsx(
+          `absolute bottom-4 z-10 m-auto animate-bounce text-4xl `,
+          arrowHid && "opacity-0"
+        )}
+      />
+    </button>
   );
 };
 
