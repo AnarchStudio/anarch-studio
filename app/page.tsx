@@ -1,5 +1,5 @@
 import Logo from "~/components/Logo";
-import NextHeroIcon from "~/components/NextHeroIcon";
+import NextHeroButton from "~/components/NextHeroButton";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
               driven by a shared passion for building potent software.
             </p>
           </div>
-          <NextHeroIcon />
+          <NextHeroButton />
         </div>
       </section>
       <section className="min-h-screen bg-black" />
