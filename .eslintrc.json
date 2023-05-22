@@ -2,6 +2,7 @@
   "root": true,
   "extends": [
     "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended",
     "plugin:tailwindcss/recommended",
     "plugin:prettier/recommended"
   ]

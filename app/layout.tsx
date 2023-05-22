@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Urbanist, Manrope } from "next/font/google";
+import { Bodoni_Moda, Manrope } from "next/font/google";
 import { Metadata } from "next";
 import Script from "next/script";
 import Logo from "~/components/Logo";
@@ -12,8 +12,8 @@ const manrope = Manrope({
   display: "swap",
 });
 
-const urbanist = Urbanist({
-  variable: "--font-urbanist",
+const BodniModa = Bodoni_Moda({
+  variable: "--font-bodoni-moda",
   subsets: ["latin"],
   display: "swap",
 });
@@ -40,10 +40,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${manrope.variable} ${urbanist.variable}`}>
+    <html
+      lang="en"
+      className={`${manrope.variable} ${BodniModa.variable} scroll-smooth`}
+    >
       <body>
         <header className=" fixed z-20 w-full  bg-black/50">
-          <div className="container m-auto flex h-16 items-center justify-between p-4 font-attract text-3xl backdrop-blur">
+          <div className="container m-auto flex h-16 items-center justify-between p-4 text-3xl backdrop-blur-sm">
             <div className="flex gap-4 text-center">
               <div className="inline-block w-8">
                 <Logo />

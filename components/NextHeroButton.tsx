@@ -34,7 +34,7 @@ const NextHeroIcon = () => {
     <button aria-label="Click to scroll" ref={buttonRef} onClick={handleClick}>
       <SlArrowDown
         className={clsx(
-          `absolute bottom-4 z-10 m-auto animate-bounce text-4xl `,
+          `absolute bottom-4 z-10 m-auto animate-bounce text-4xl`,
           arrowHid && "opacity-0"
         )}
       />
