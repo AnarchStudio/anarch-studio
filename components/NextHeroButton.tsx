@@ -27,11 +27,11 @@ const NextHeroIcon = () => {
       behavior: "smooth",
       block: "start",
     });
-    console.log("clicked");
   }, []);
 
   return (
     <button
+      type="button"
       className={clsx(
         `absolute bottom-4 z-10 m-auto animate-bounce text-4xl text-white`,
         arrowHid && "opacity-0"
