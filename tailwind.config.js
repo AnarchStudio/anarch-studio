@@ -9,10 +9,11 @@ module.exports = {
         crap: ["var(--font-manrope)", "sans-serif"],
       },
       animation: {
-        appear: "cloud 1s ease-in-out forwards",
+        "appear-up": "cloud-up 1s ease-in-out forwards",
+        "appear-down": "cloud-down 1s ease-in-out forwards",
       },
       keyframes: {
-        ["cloud"]: {
+        ["cloud-up"]: {
           "0%": {
             opacity: 0,
             transform: "translateY(2rem)",
@@ -22,8 +23,18 @@ module.exports = {
             transform: "translateY(0)",
           },
         },
+        ["cloud-down"]: {
+          "0%": {
+            opacity: 0,
+            transform: "translateY(-2rem)",
+          },
+          "100%": {
+            opacity: 1,
+            transform: "translateY(0)",
+          },
+        },
       },
+      plugins: [],
     },
-    plugins: [],
   },
 };

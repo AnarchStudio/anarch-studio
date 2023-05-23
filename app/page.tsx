@@ -9,7 +9,7 @@ export default function Home() {
           <div className="absolute left-0 w-[30rem] sm:w-[40rem] lg:w-[60rem] xl:w-[64rem]">
             <Logo />
           </div>
-          <div className="inset-x-0 z-10 animate-appear overflow-hidden bg-black p-4 opacity-0">
+          <div className="inset-x-0 z-10 animate-appear-up overflow-hidden bg-black p-4 opacity-0">
             <p
               className={
                 "font-attract text-2xl font-bold text-slate-200 sm:text-4xl lg:text-6xl"
