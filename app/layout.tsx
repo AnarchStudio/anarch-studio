@@ -60,6 +60,7 @@ export default function RootLayout({
                 aria-label="Go to Astra Surge's gitHub page"
                 href="https://github.com/AstraSurge"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FiGithub />
               </a>
@@ -67,6 +68,7 @@ export default function RootLayout({
                 aria-label="Go to Astra Surge's itch.io page"
                 href="https://astrasurge.itch.io/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FaItchIo />
               </a>
@@ -74,6 +76,7 @@ export default function RootLayout({
                 aria-label="Email"
                 href="mailto:contact@astrasurge.com"
                 target="_blank"
+                rel="noreferrer"
               >
                 <FiMail />
               </a>
