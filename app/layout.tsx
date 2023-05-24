@@ -5,6 +5,7 @@ import Script from "next/script";
 import Logo from "~/components/Logo";
 import { FiGithub, FiMail } from "react-icons/fi";
 import { FaItchIo } from "react-icons/fa";
+import Link from "next/link";
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -45,8 +46,8 @@ export default function RootLayout({
       className={`${manrope.variable} ${BodniModa.variable} scroll-smooth`}
     >
       <body>
-        <header className=" fixed z-20 w-full  animate-appear-down bg-black/50 opacity-0">
-          <div className="container m-auto flex h-16 items-center justify-between p-4 text-3xl backdrop-blur-sm">
+        <header className=" fixed z-20 w-full  animate-appear-down bg-black/50 text-white opacity-0">
+          <div className="container m-auto flex h-16 items-center justify-between p-2 text-3xl backdrop-blur-sm">
             <div className="flex gap-4 text-center">
               <div className="inline-block w-8">
                 <Logo />
@@ -83,7 +84,19 @@ export default function RootLayout({
             </div>
           </div>
         </header>
+
         {children}
+        <footer className="bg-black text-white ">
+          <div className="container mx-auto flex items-center justify-between px-2 py-4">
+            <div className="flex gap-4 text-center">
+              <div className="inline-block w-8">
+                <Logo />
+              </div>
+              <span className="font-bold">Astra Surge</span>
+            </div>
+            <Link href="/privacy-policy">PRIVACY POLICY</Link>
+          </div>
+        </footer>
         <Script
           id="icarus"
           data-domain="astrasurge.com"
