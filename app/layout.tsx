@@ -23,11 +23,6 @@ export const metadata: Metadata = {
   title: "Astra Surge",
   description:
     "Astra Surge is a tight-knit collective of developers and designers driven by a shared passion for building potent open-source software.",
-  icons: {
-    icon: "/favicon-32x32.png",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
-  },
   manifest: "/site.webmanifest",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
