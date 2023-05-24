@@ -34,7 +34,16 @@ module.exports = {
           },
         },
       },
-      plugins: [],
+      typography: {
+        DEFAULT: {
+          css: {
+            h2: {
+              "font-family": ["var(--font-bodoni-moda)"]
+            }
+          }
+        }
+      }
     },
   },
+  plugins: [require('@tailwindcss/typography')],
 };
