@@ -47,7 +47,7 @@ export default function RootLayout({
     >
       <body>
         <header className=" fixed z-20 w-full  animate-appear-down bg-black/50 text-white opacity-0">
-          <div className="container m-auto flex h-16 items-center justify-between p-4 text-3xl backdrop-blur-sm">
+          <div className="container m-auto flex h-16 items-center justify-between p-2 text-3xl backdrop-blur-sm">
             <div className="flex gap-4 text-center">
               <div className="inline-block w-8">
                 <Logo />
@@ -87,7 +87,7 @@ export default function RootLayout({
 
         {children}
         <footer className="bg-black text-white ">
-          <div className="container mx-auto flex items-center justify-between py-4">
+          <div className="container mx-auto flex items-center justify-between px-2 py-4">
             <div className="flex gap-4 text-center">
               <div className="inline-block w-8">
                 <Logo />
