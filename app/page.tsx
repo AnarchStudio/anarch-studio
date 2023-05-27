@@ -8,7 +8,7 @@ export default function Home() {
       <section className="bg-black text-white">
         <div className="container relative m-auto flex h-screen flex-col items-center justify-center">
           <div className="absolute left-0 w-[30rem] sm:w-[40rem] lg:w-[60rem] xl:w-[64rem]">
-            <Logo className=" drop-shadow-[0px_0px_128px_#0d469b]" />
+            <Logo className=" transform-gpu drop-shadow-[0px_0px_128px_#0d469b] " />
           </div>
           <div className="inset-x-0 animate-appear-up overflow-hidden  p-4 opacity-0">
             <p className="font-attract text-3xl font-extrabold  sm:text-5xl lg:text-8xl">
