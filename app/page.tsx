@@ -1,24 +1,58 @@
 import Logo from "~/components/Logo";
 import NextHeroButton from "~/components/NextHeroButton";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <section className="bg-black">
-        <div className="container relative m-auto flex h-screen flex-col items-center justify-center gap-8">
+    <>
+      <section className="bg-black text-white">
+        <div className="container relative m-auto flex h-screen flex-col items-center justify-center">
           <div className="absolute left-0 w-[30rem] sm:w-[40rem] lg:w-[60rem] xl:w-[64rem]">
-            <Logo />
+            <Logo className=" drop-shadow-[0px_0px_128px_#0d469b]" />
           </div>
-          <div className="inset-x-0 z-10 animate-appear-up overflow-hidden bg-black p-4 opacity-0">
-            <p className="font-attract text-2xl font-bold text-slate-200 sm:text-4xl lg:text-6xl">
-              Astra Surge is a tight-knit collective of developers and designers
-              driven by a shared passion for building potent software.
+          <div className="inset-x-0 animate-appear-up overflow-hidden  p-4 opacity-0">
+            <p className="font-attract text-3xl font-extrabold  sm:text-5xl lg:text-8xl">
+              Passion-Powered Collective Breathing Life into Software.
             </p>
           </div>
-          <NextHeroButton />
+          <div>
+            <NextHeroButton />
+          </div>
         </div>
       </section>
-      <section className="min-h-screen bg-black" />
-    </main>
+
+      <section className="min-h-screen bg-indigo-50  py-16 text-black">
+        <div className="container m-auto px-4">
+          <div className="flex flex-row gap-4 py-32" id="projects">
+            <div className="w-4 bg-[#06f]" />
+            <span className="block  font-attract text-8xl font-bold">
+              Projects
+            </span>
+          </div>
+          <div className="flex flex-col items-center gap-8 lg:flex-row">
+            <div className="flex flex-1 flex-col gap-6 text-slate-900">
+              <span className="flex flex-initial gap-2 text-5xl font-bold">
+                Sword of Time
+              </span>
+              <p className="text-2xl font-thin  before:inline-block">
+                &quot;Sword of Time&quot; is a pixel-style adventure game
+                developed by Astra Surge. Explore the Nethoria continent, meet
+                characters, battle foes, and uncover clues about your forgotten
+                identity to reveal your incredible destiny. Will you reclaim
+                your lost memories in this unforgettable adventure?
+              </p>
+            </div>
+            <div className=" order-first flex-1 lg:order-none">
+              <Image
+                alt="Sword of Time"
+                src="/images/sword_of_time.png"
+                width={1920}
+                height={1080}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

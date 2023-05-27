@@ -33,14 +33,14 @@ const NextHeroIcon = () => {
     <button
       type="button"
       className={clsx(
-        `absolute bottom-4 z-10 m-auto animate-bounce text-4xl text-white`,
+        "absolute bottom-4 animate-bounce text-4xl",
         arrowHid && "opacity-0"
       )}
       aria-label="Click to scroll"
       ref={buttonRef}
       onClick={handleClick}
     >
-      <SlArrowDown className="animate-appear-up" />
+      <SlArrowDown className="animate-[cloud-down_1s_.5s_ease-in-out_forwards] opacity-0" />
     </button>
   );
 };

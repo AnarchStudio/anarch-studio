@@ -16,7 +16,7 @@ module.exports = {
         ["cloud-up"]: {
           "0%": {
             opacity: 0,
-            transform: "translateY(2rem)",
+            transform: "translateY(4rem)",
           },
           "100%": {
             opacity: 1,
@@ -26,7 +26,7 @@ module.exports = {
         ["cloud-down"]: {
           "0%": {
             opacity: 0,
-            transform: "translateY(-2rem)",
+            transform: "translateY(-4rem)",
           },
           "100%": {
             opacity: 1,
@@ -34,15 +34,6 @@ module.exports = {
           },
         },
       },
-      typography: {
-        DEFAULT: {
-          css: {
-            h2: {
-              "font-family": ["var(--font-bodoni-moda)"]
-            }
-          }
-        }
-      }
     },
   },
   plugins: [require('@tailwindcss/typography')],

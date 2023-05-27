@@ -3,8 +3,7 @@ import { Bodoni_Moda, Manrope } from "next/font/google";
 import { Metadata } from "next";
 import Script from "next/script";
 import Logo from "~/components/Logo";
-import { FiGithub, FiMail } from "react-icons/fi";
-import { FaItchIo } from "react-icons/fa";
+import { RxExternalLink } from "react-icons/rx";
 import Link from "next/link";
 
 const manrope = Manrope({
@@ -22,7 +21,7 @@ const BodniModa = Bodoni_Moda({
 export const metadata: Metadata = {
   title: "Astra Surge",
   description:
-    "Astra Surge is a tight-knit collective of developers and designers driven by a shared passion for building potent open-source software.",
+    "Astra Surge is a tight-knit collective of developers and designers driven by a shared passion for building potent software.",
   manifest: "/site.webmanifest",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
@@ -41,55 +40,73 @@ export default function RootLayout({
       className={`${manrope.variable} ${BodniModa.variable} scroll-smooth`}
     >
       <body>
-        <header className=" fixed z-20 w-full  animate-appear-down bg-black/50 text-white opacity-0">
-          <div className="container m-auto flex h-16 items-center justify-between p-2 text-3xl backdrop-blur-sm">
-            <div className="flex gap-4 text-center">
+        <header className="fixed z-20 w-full animate-[cloud-down_1s_.5s_ease-in-out_forwards] bg-black/50 text-white opacity-0 backdrop-blur-sm">
+          <div className="container m-auto flex h-16 items-center justify-between p-4">
+            <Link href="/" className="flex items-center gap-2 text-3xl">
               <div className="inline-block w-8">
                 <Logo />
               </div>
-              <span className="font-bold drop-shadow-[4px_-4px_#06f]">
+              <span className="font-black drop-shadow-[4px_-4px_#06f]">
                 Astra Surge
               </span>
+            </Link>
+            <div className="flex gap-2 font-bold lg:gap-4">
+              <Link className="link-underline" href="/#projects">
+                Projects
+              </Link>
+              <Link className="link-underline" href="/about">
+                About
+              </Link>
             </div>
-            <div className="flex gap-4 text-2xl text-slate-50 drop-shadow-[3px_-3px_#06f]">
+          </div>
+        </header>
+
+        {children}
+
+        <footer className="bg-black text-white">
+          <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-8 lg:flex-row">
+            <div className="flex gap-8 font-thin">
               <a
                 aria-label="Go to Astra Surge's gitHub page"
                 href="https://github.com/AstraSurge"
                 target="_blank"
                 rel="noreferrer"
+                className="flex items-center gap-2"
               >
-                <FiGithub />
+                <RxExternalLink />
+                GITHUB
               </a>
               <a
                 aria-label="Go to Astra Surge's itch.io page"
                 href="https://astrasurge.itch.io/"
                 target="_blank"
                 rel="noreferrer"
+                className="flex items-center gap-2"
               >
-                <FaItchIo />
+                <RxExternalLink />
+                ITCH.IO
               </a>
               <a
                 aria-label="Email"
                 href="mailto:contact@astrasurge.com"
                 target="_blank"
                 rel="noreferrer"
+                className="flex items-center gap-2"
               >
-                <FiMail />
+                <RxExternalLink />
+                EMAIL
               </a>
             </div>
-          </div>
-        </header>
-
-        {children}
-        <footer className="bg-black text-white ">
-          <div className="container mx-auto flex items-center justify-between px-2 py-4">
-            <div className="flex gap-4 text-center">
-              <div className="inline-block w-8">
-                <Logo />
+            <div className="flex flex-col items-center gap-2 font-thin text-slate-400 lg:flex-row lg:gap-6">
+              <div>
+                <span className="mr-2">@ {new Date().getFullYear()}</span>
+                <span className="link-underline">ASTEA SURGE. </span>ALL RIGHTS
+                RESERVED.
               </div>
-              <span className="font-bold">Astra Surge</span>
+              <Link href="/privacy-policy" className="link-underline">
+                PRIVACY POLICY
+              </Link>
             </div>
-            <Link href="/privacy-policy">PRIVACY POLICY</Link>
           </div>
         </footer>
         <Script
