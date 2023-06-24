@@ -21,7 +21,7 @@ const BodniModa = Bodoni_Moda({
 export const metadata: Metadata = {
   title: "Astra Surge",
   description:
-    "Astra Surge is a tight-knit collective of developers and designers driven by a shared passion for building potent software.",
+    "Astra Surge: Passion-Powered Collective Breathing Life into Software.",
   manifest: "/site.webmanifest",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
@@ -37,25 +37,23 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${manrope.variable} ${BodniModa.variable} scroll-smooth`}
+      className={`${BodniModa.variable} ${manrope.variable}  scroll-smooth`}
     >
       <body>
-        <header className="fixed z-20 w-full animate-[cloud-down_1s_.5s_ease-in-out_forwards] bg-black/50 text-white opacity-0 backdrop-blur-sm">
+        <header className="fixed z-20 w-full animate-[cloud-down_1s_.5s_ease-in-out_forwards] bg-black text-white opacity-0 backdrop-blur-sm">
           <div className="container m-auto flex h-16 items-center justify-between p-4">
-            <Link href="/" className="flex items-center gap-2 text-3xl">
+            <Link href="/" className="flex items-center gap-2 text-2xl">
               <div className="inline-block w-8">
                 <Logo />
               </div>
-              <span className="font-black drop-shadow-[4px_-4px_#06f]">
-                Astra Surge
-              </span>
+              <span className="font-black">Astra Surge</span>
             </Link>
             <div className="flex gap-2 font-bold lg:gap-4">
-              <Link className="link-underline" href="/#projects">
-                Projects
-              </Link>
-              <Link className="link-underline" href="/about">
-                About
+              <Link
+                className="link-underline"
+                href="mailto:contact@astrasurge.com"
+              >
+                Contact
               </Link>
             </div>
           </div>
@@ -85,6 +83,16 @@ export default function RootLayout({
               >
                 <RxExternalLink />
                 ITCH.IO
+              </a>
+              <a
+                aria-label="Go to Astra Surge's google play page"
+                href="https://play.google.com/store/apps/dev?id=5460117098987354469"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2"
+              >
+                <RxExternalLink />
+                GOOGLE PLAY
               </a>
               <a
                 aria-label="Email"

@@ -1,17 +1,18 @@
 import Logo from "~/components/Logo";
 import NextHeroButton from "~/components/NextHeroButton";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
-      <section className="sticky top-0 h-screen bg-black text-white">
-        <div className="container relative m-auto flex h-screen flex-col items-center justify-center">
+      <section className="sticky top-0 h-screen bg-black text-white backdrop-blur">
+        <div className="container relative m-auto flex h-screen flex-col items-center justify-center ">
           <div className="absolute left-0 w-[30rem] sm:w-[40rem] lg:w-[60rem] xl:w-[64rem]">
-            <Logo className=" transform-gpu drop-shadow-[0px_0px_128px_#0d469b] " />
+            <Logo className=" transform-gpu drop-shadow-[0px_0px_128px_#0d469b]" />
           </div>
-          <div className="inset-x-0 animate-appear-up overflow-hidden  p-4 opacity-0">
-            <p className="font-attract text-4xl font-extrabold  sm:text-5xl lg:text-8xl">
+          <div className="inset-x-0 animate-appear-up overflow-hidden  p-4 opacity-0 ">
+            <p className="font-attract text-6xl font-extrabold  lg:text-8xl">
               Passion-Powered Collective Breathing Life into Software.
             </p>
           </div>
@@ -21,34 +22,66 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="sticky top-0 min-h-screen bg-indigo-50  py-16 text-black">
-        <div className="container m-auto px-4">
-          <div className="flex flex-row gap-4 py-32" id="projects">
-            <div className="w-4 bg-[#06f]" />
-            <span className="block  font-attract text-6xl  font-bold lg:text-8xl">
-              Projects
-            </span>
-          </div>
-          <div className="flex flex-col items-center gap-8 lg:flex-row">
-            <div className="flex flex-1 flex-col gap-6 text-slate-900">
-              <span className="flex flex-initial gap-2 text-3xl font-bold lg:text-5xl">
-                Sword of Time
-              </span>
-              <p className="text-xl font-thin before:inline-block  lg:text-2xl">
-                &quot;Sword of Time&quot; is a pixel-style adventure game
-                developed by Astra Surge. Explore the Nethoria continent, meet
-                characters, battle foes, and uncover clues about your forgotten
-                identity to reveal your incredible destiny. Will you reclaim
-                your lost memories in this unforgettable adventure?
-              </p>
+      <section className="sticky top-0 min-h-screen overflow-hidden  bg-white py-16 text-black">
+        <div className="absolute right-0 top-0 -z-10 w-full -translate-y-1/2  md:w-2/3  lg:w-2/3 lg:-translate-y-3/4 ">
+          <Image
+            src="/home_hero_cloud.jpg"
+            alt="cloud"
+            unoptimized
+            width={2048}
+            height={2048}
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className=" absolute bottom-0 right-0 -z-10 w-full translate-y-1/2 md:w-2/3 md:translate-y-1/3 lg:w-1/2 ">
+          <Image
+            src="/home_hero_girl.jpg"
+            alt="Dream Snap Hero"
+            unoptimized
+            width={2048}
+            height={2048}
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="container relative m-auto flex h-screen max-h-[70rem] min-h-[60rem] items-center  px-4">
+          <div className="z-10 flex flex-col gap-6 md:gap-12">
+            <div className="relative">
+              <div className="relative z-10 h-32 w-32">
+                <Image
+                  sizes="100px"
+                  src="/logo.png"
+                  fill
+                  alt="Dream Snap Logo"
+                  unoptimized
+                />
+              </div>
+              <div className="absolute left-16 top-0 h-32 w-32 rounded-full">
+                <Image
+                  src="/icon_shadow.png"
+                  alt="Dream Snap Shadow"
+                  unoptimized
+                  fill
+                />
+              </div>
             </div>
-            <div className=" order-first flex-1 lg:order-none">
-              <Image
-                alt="Sword of Time"
-                src="/images/sword_of_time.png"
-                width={1920}
-                height={1080}
-              />
+            <h1 className="max-w-4xl font-attract text-6xl font-semibold text-black lg:text-7xl">
+              Interpret, track and analyze your dreams
+            </h1>
+            <div className="inline-flex gap-6 font-crap">
+              <Link
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.astrasurge.dreams&utm_source=astra_surge_official_website&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+              >
+                <div className="relative h-20 w-60">
+                  <Image
+                    width={564}
+                    height={168}
+                    unoptimized
+                    alt="Get it on Google Play"
+                    src="/get_it_on_google_play.png"
+                  />
+                </div>
+              </Link>
             </div>
           </div>
         </div>
