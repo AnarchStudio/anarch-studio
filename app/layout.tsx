@@ -65,14 +65,14 @@ export default function RootLayout({
           <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-8 lg:flex-row">
             <div className="flex gap-8 font-thin">
               <a
-                aria-label="Go to Astra Surge's gitHub page"
-                href="https://github.com/AstraSurge"
+                aria-label="Go to Astra Surge's google play page"
+                href="https://play.google.com/store/apps/dev?id=5460117098987354469"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2"
               >
                 <RxExternalLink />
-                GITHUB
+                GOOGLE PLAY
               </a>
               <a
                 aria-label="Go to Astra Surge's itch.io page"
@@ -83,16 +83,6 @@ export default function RootLayout({
               >
                 <RxExternalLink />
                 ITCH.IO
-              </a>
-              <a
-                aria-label="Go to Astra Surge's google play page"
-                href="https://play.google.com/store/apps/dev?id=5460117098987354469"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center gap-2"
-              >
-                <RxExternalLink />
-                GOOGLE PLAY
               </a>
               <a
                 aria-label="Email"
