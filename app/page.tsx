@@ -25,7 +25,7 @@ export default function Home() {
       <section className="sticky top-0 min-h-screen overflow-hidden  bg-white py-16 text-black">
         <div className="absolute right-0 top-0 -z-10 w-full -translate-y-1/2  md:w-2/3  lg:w-2/3 lg:-translate-y-3/4 ">
           <Image
-            src="/home_hero_cloud.jpg"
+            src="/dream_snap_home_hero_cloud.jpg"
             alt="cloud"
             unoptimized
             width={2048}
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div className=" absolute bottom-0 right-0 -z-10 w-full translate-y-1/2 md:w-2/3 md:translate-y-1/3 lg:w-1/2 ">
           <Image
-            src="/home_hero_girl.jpg"
+            src="/dream_snap_home_hero_girl.jpg"
             alt="Dream Snap Hero"
             unoptimized
             width={2048}
@@ -48,8 +48,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative z-10 h-32 w-32">
                 <Image
-                  sizes="100px"
-                  src="/logo.png"
+                  src="/dream_snap_logo.png"
                   fill
                   alt="Dream Snap Logo"
                   unoptimized
@@ -57,7 +56,7 @@ export default function Home() {
               </div>
               <div className="absolute left-16 top-0 h-32 w-32 rounded-full">
                 <Image
-                  src="/icon_shadow.png"
+                  src="/dream_snap_icon_shadow.png"
                   alt="Dream Snap Shadow"
                   unoptimized
                   fill
