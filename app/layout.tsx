@@ -53,7 +53,7 @@ export default function RootLayout({
                 className="link-underline"
                 href="mailto:contact@astrasurge.com"
               >
-                Contact
+                Partner With Us
               </Link>
             </div>
           </div>
