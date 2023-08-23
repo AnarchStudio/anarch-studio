@@ -44,17 +44,18 @@ export default function Home() {
           />
         </div>
         <div className="container relative m-auto flex h-screen max-h-[70rem] min-h-[60rem] items-center  px-4">
-          <div className="z-10 flex flex-col gap-6 md:gap-12">
+          <div className="z-10 flex flex-col gap-8 md:gap-16">
             <div className="relative">
-              <div className="relative z-10 h-32 w-32">
+              <div className="relative z-10 h-16 w-16 lg:h-28 lg:w-28">
                 <Image
+                  sizes="100px"
                   src="/dream_snap_logo.png"
                   fill
                   alt="Dream Snap Logo"
                   unoptimized
                 />
               </div>
-              <div className="absolute left-16 top-0 h-32 w-32 rounded-full">
+              <div className="absolute left-8 top-0 h-16 w-16 rounded-full lg:left-14 lg:h-28 lg:w-28">
                 <Image
                   src="/dream_snap_icon_shadow.png"
                   alt="Dream Snap Shadow"
@@ -62,6 +63,9 @@ export default function Home() {
                   fill
                 />
               </div>
+              <span className="absolute left-28 top-3 font-attract text-4xl font-light md:text-5xl lg:left-48 lg:top-6 lg:text-7xl">
+                DREAM SNAP
+              </span>
             </div>
             <h1 className="max-w-4xl font-attract text-6xl font-semibold text-black lg:text-7xl">
               Interpret, track and analyze your dreams
@@ -71,15 +75,26 @@ export default function Home() {
                 target="_blank"
                 href="https://play.google.com/store/apps/details?id=com.astrasurge.dreams&utm_source=astra_surge_official_website&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
               >
-                <div className="relative h-20 w-60">
-                  <Image
-                    width={564}
-                    height={168}
-                    unoptimized
-                    alt="Get it on Google Play"
-                    src="/get_it_on_google_play.png"
-                  />
-                </div>
+                <Image
+                  width={200}
+                  height={60}
+                  unoptimized
+                  alt="Get it on Google Play"
+                  src="/get_it_on_google_play.png"
+                />
+              </Link>
+              <Link
+                href="https://www.producthunt.com/posts/dream-snap?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-dream&#0045;snap"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Image
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=410889&theme=neutral"
+                  alt="Dream&#0032;Snap - Log&#0032;dreams&#0044;&#0032;uncover&#0032;their&#0032;meanings&#0044;&#0032;and&#0032;explore&#0032;patterns | Product Hunt"
+                  unoptimized
+                  height={60}
+                  width={280}
+                />
               </Link>
             </div>
           </div>
