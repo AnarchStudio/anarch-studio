@@ -98,7 +98,7 @@ export default function RootLayout({
             <div className="flex flex-col items-center gap-2 font-thin text-slate-400 lg:flex-row lg:gap-6">
               <div>
                 <span className="mr-2">@ {new Date().getFullYear()}</span>
-                <span className="link-underline">ASTEA SURGE. </span>ALL RIGHTS
+                <span className="link-underline">ASTRA SURGE. </span>ALL RIGHTS
                 RESERVED.
               </div>
               <Link href="/privacy-policy" className="link-underline">
